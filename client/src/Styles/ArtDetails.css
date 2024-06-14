@@ -1,0 +1,21 @@
+.btn {
+    padding: 5px 8px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+.btn-1 {
+    background-color: green;
+
+}
+
+.btn1:hover {
+    opacity: 1;
+    background-color: green;
+}
+
+.btn-2 {
+    background-color: red;
+}

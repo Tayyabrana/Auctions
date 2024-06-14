@@ -1,0 +1,77 @@
+.Navbar {
+    position: fixed;
+    z-index: 1000;
+}
+
+.Navbar .NavRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0px;
+    width: 100vw;
+    background: linear-gradient(90deg, rgb(0, 101, 219)40%, rgb(0, 212, 255, 1)100%);
+}
+
+.Navbar .NavLinks {
+    display: flex;
+    gap: 40px;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.Navbar .NavLinks a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.Navbar .NavLinks .active-link {
+    color: rgb(238, 255, 0);
+}
+
+/* .Navbar .NavLinks .p-non-active:hover {
+    color: rgb(179, 179, 179);
+} */
+
+.Navbar .btn-div {
+    padding: 0;
+    padding-right: 40px;
+}
+
+.Navbar .logout-btn {
+    color: white;
+    &:hover {
+        color: black;
+        background-color: white;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Navbar .NavRow {
+        align-items: center;
+    }
+
+    .Navbar .NavLinks {
+        gap: 3vw;
+        padding-left: 2vw;
+    }
+
+    .Navbar .NavLinks p {
+        font-size: 14px;
+    }
+
+    .Navbar .btn-div {
+        padding: 0;
+        padding-right: 2vw;
+    }
+
+    .Navbar .logout-btn {
+        font-size: 12px;
+        padding: 3px 20px;
+    }
+}
